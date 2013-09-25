@@ -74,3 +74,12 @@ All of the applications or software listed below are required, unless it is mark
 - CLC Genomics Workbench is not necessarily required to run the program but it is required to complete the final step of the project which is to be able to know if SNPs exists from the identified antibiotic resistance genes. 
 - This is a licensed software that needs to be purchased.
 - For more information, visit http://www.clcbio.com/products/clc-genomics-workbench/.
+
+
+Suggested Improvements
+----------------------
+- Although the program has been created with a set goal towards cross-compatibility between Macintosh and Windows computers, but the program has only been tested on a Mac computer with an OS X 10.8.4 (Mountain Lion) operating system. It is highly suggested to test the program on a Windows computer to ensure compatibility along with the external third-party modules and softwares required to run it.
+- Due to PySAM’s limited means of parsing sequences, it is highly suggested to use Python’s native code for file manipulation. This is in relation to an algorithm in assemble_hit_files.py. An array of file positions (sort of indexing) was created when searching for sequences in the unmapped sorted BAM file to retrieve the original sequence for each high scoring hit. The problem with PySAM, you can only query values in two ways; first is parsing everything at once in a dictionary which would be memory intensive especially with huge files, and the second way was by using next() built-in function that points to the next sequence. But the problem with the built-in next function is if the sequence is in the current file position, you cannot retrieve the current value but instead it only lets you get the next sequence. So what ends up happening, you go to file position before it which is 50,000 sequences before the right one, and go through all 50,000 sequences until you get back to the current file position.
+- ARDB table and AR Groups table should both remain on MySQL database since the goal is to make the program accessible in the Internet but future improvements should look into parsing specimen BLAST output and saving it on a SQLITE database. If the results of the BLAST are only important locally, then there is no need to pushed it on the MySQL database, instead SQLITE is a local database that does not need any server. Also, if the specimen tables are not needed, they can also be deleted.
+- Create a Graphical User Interface to make it user-friendly especially for researchers who are not familiar with the command line.
+
