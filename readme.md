@@ -7,7 +7,7 @@ In detail, this program filters out the unmapped sequences from a strain that wa
 
 Files
 
-run.py - [ PRIMARY FILE ] It runs through all the individual steps of the project
+run.py - It runs through all the individual steps of the project
 bam_to_unmapped_fasta.py - Filters unmapped reads from BAM file (MiSeq output) and generates a sorted BAM file and a FASTA file
 blast_fasta.py - Identifies similarities between a FASTA file against the ARDB using Basic Local Alignment Search Tool (BLAST)
 parse_xml_specimen.py - Parses the results of the BLAST
@@ -69,7 +69,6 @@ phpMyAdmin (optional)
 - Current release phpMyAdmin 3.5.2.2
 - phpMyAdmin is a free software used for MySQL administration. This software is marked as optional as the program can run even without this program.
 - For more information and the installation link of phpMyAdmin, visit http://www.phpmyadmin.net/home_page/index.php.
-
 
 CLC Genomics Workbench
 - CLC Genomics Workbench is not necessarily required to run the program but it is required to complete the final step of the project which is to be able to know if SNPs exists from the identified antibiotic resistance genes. 
