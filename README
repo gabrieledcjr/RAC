@@ -1,0 +1,5 @@
+Introduction
+
+The RAC project uses the alignment-assembly algorithm to detect single-nucleotide polymorphisms (SNPs) in antibiotic-resistant (AR) genes that were identified from a specific strain. 
+
+In detail, this program filters out the unmapped sequences from a strain that was aligned through a sequencer (Illumina MiSeq). The program will have to identify what AR genes are present by finding similarities against a locally maintained Antibiotic Resistant Database (ARDB) using the Basic Local Alignment Search Tool (BLAST). After identifying the AR genes present in the strain, the high scoring sequences are then assembled under the particular AR gene sequence it belongs, using the CLC Genomics Workbench. Besides assembly, CLC provides a visual mapping of the assembled sequences as well as a summarized tabular format. Thus making it particularly easy to detect SNPs and interpret the results.
