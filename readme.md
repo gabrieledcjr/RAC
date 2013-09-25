@@ -75,6 +75,9 @@ All of the applications or software listed below are required, unless it is mark
 - This is a licensed software that needs to be purchased.
 - For more information, visit http://www.clcbio.com/products/clc-genomics-workbench/.
 
+Illustration of the program
+---------------------------
+![alt tag](https://raw.github.com/gabrieledcjr/RAC/master/program_flow.png)
 
 Suggested Improvements
 ----------------------
