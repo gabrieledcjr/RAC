@@ -1,6 +1,6 @@
 Introduction
 ------------
-The RAC project uses the alignment-assembly algorithm to detect single-nucleotide polymorphisms (SNPs) in antibiotic-resistant (AR) genes that were identified from a specific strain. 
+The RAC project uses the *alignment-assembly algorithm* to detect single-nucleotide polymorphisms (SNPs) in antibiotic-resistant (AR) genes that were identified from a specific strain. 
 
 In detail, this program filters out the unmapped sequences from a strain that was aligned through a sequencer (Illumina MiSeq). The program will have to identify what AR genes are present by finding similarities against a locally maintained Antibiotic Resistant Database (ARDB) using the Basic Local Alignment Search Tool (BLAST). After identifying the AR genes present in the strain, the high scoring sequences are then assembled under the particular AR gene sequence it belongs, using the CLC Genomics Workbench. Besides assembly, CLC provides a visual mapping of the assembled sequences as well as a summarized tabular format. Thus making it particularly easy to detect SNPs and interpret the results. 
 
@@ -70,7 +70,7 @@ All of the applications or software listed below are required, unless it is mark
 - phpMyAdmin is a free software used for MySQL administration. This software is marked as optional as the program can run even without this program.
 - For more information and the installation link of phpMyAdmin, visit http://www.phpmyadmin.net/home_page/index.php.
 
-CLC Genomics Workbench
+**CLC Genomics Workbench**
 - CLC Genomics Workbench is not necessarily required to run the program but it is required to complete the final step of the project which is to be able to know if SNPs exists from the identified antibiotic resistance genes. 
 - This is a licensed software that needs to be purchased.
 - For more information, visit http://www.clcbio.com/products/clc-genomics-workbench/.
