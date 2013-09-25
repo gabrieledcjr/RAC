@@ -7,13 +7,26 @@ In detail, this program filters out the unmapped sequences from a strain that wa
 
 Files
 -----
-run.py - It runs through all the individual steps of the project
-bam_to_unmapped_fasta.py - Filters unmapped reads from BAM file (MiSeq output) and generates a sorted BAM file and a FASTA file
-blast_fasta.py - Identifies similarities between a FASTA file against the ARDB using Basic Local Alignment Search Tool (BLAST)
-parse_xml_specimen.py - Parses the results of the BLAST
-parse_xml_ARDB.py - Parses the results of the BLAST while finding similarities within the ARDB to create antibiotic resistant groups
-assemble_hit_files.py - Generate files to be assembled against specific AR genes identified by BLAST
-/Data/Database/create_database.py - Creates standalone BLAST Antibiotic Resistance Database (ARDB)
+**run.py**
+- It runs through all the individual steps of the project
+
+**bam_to_unmapped_fasta.py**
+- Filters unmapped reads from BAM file (MiSeq output) and generates a sorted BAM file and a FASTA file
+
+**blast_fasta.py**
+- Identifies similarities between a FASTA file against the ARDB using Basic Local Alignment Search Tool (BLAST)
+
+**parse_xml_specimen.py**
+- Parses the results of the BLAST
+
+**parse_xml_ARDB.py**
+- Parses the results of the BLAST while finding similarities within the ARDB to create antibiotic resistant groups
+
+**assemble_hit_files.py**
+- Generate files to be assembled against specific AR genes identified by BLAST
+
+**/Data/Database/create_database.py**
+- Creates standalone BLAST Antibiotic Resistance Database (ARDB)
 
 
 System Requirements
